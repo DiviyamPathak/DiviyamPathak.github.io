@@ -1,2 +1,2 @@
-# Portfolio
-web dev projects and personal home page info
+# Work sideprojects and hobby site
+

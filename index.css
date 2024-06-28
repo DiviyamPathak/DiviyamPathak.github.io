@@ -12,13 +12,13 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
-    color: #333;
+    color: #141313;
 }
 
 /* Header styling */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #8fc549;
+    color: #070707;
     padding: 1rem 0;
 }
 
@@ -57,7 +57,7 @@ main section p {
 
 /* Footer styling */
 footer {
-    background-color: #333;
+    background-color:#8fc549;
     color: #fff;
     text-align: center;
     padding: 1rem 0;

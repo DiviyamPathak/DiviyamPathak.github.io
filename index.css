@@ -17,7 +17,7 @@ body {
 
 /* Header styling */
 header {
-    background-color: #d48c04;
+    background-color: #7a7a7aef;
     color: #070707;
     padding: 1rem 0;
 }
@@ -58,7 +58,7 @@ main section p {
 
 /* Footer styling */
 footer {
-    background-color:#d48c04;
+    background-color:#7a7a7aef;
     color: #fff;
     text-align: center;
     padding: 1rem 0;

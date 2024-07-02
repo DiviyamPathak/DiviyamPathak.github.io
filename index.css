@@ -48,11 +48,12 @@ main section {
 main section h1,
 main section h2 {
     margin-bottom: 1rem;
-    color: #333;
+    color: #000000;
 }
 
 main section p {
-    color: #666;
+    color: #111010;
+    padding-left: 2rem;
 }
 
 /* Footer styling */

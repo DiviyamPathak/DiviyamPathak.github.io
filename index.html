@@ -21,17 +21,23 @@
         <section id="about">
             <h2>About Me</h2>
             <p>I’m a passionate technologist with a multifaceted background. My interests span several key areas:
-                 System programming , Compilers , Kernel devlopment , Devops with Backend
-                I thrive on low-level challenges, diving into the intricacies of hardware and software interaction. Whether 
-                it’s optimizing code, designing efficient algorithms, 
+                 System programming ,Compilers ,Kernel devlopment ,Devops with Backend
+                I thrive on hard challenges, diving into the intricacies of hardware and software interaction. Whether 
+                it’s optimizing code, designing efficient algorithms
                 or squeezing out performance gains, I find joy in the nitty-gritty details. </p>
         </section>
         <section id="projects">
             <h1>My Projects and Experiences</h1>
             <ul>
-                <li><a href="#projects"></a>Gsoc projects At NetBSD</li>
-                <p>I am documenting and Implementing ATF test and testcases for setroot function in NetBSD kernel. </p>
-
+                <li><a href="https://diviyampathak.github.io/Gsoc-2024-NetBSD/">Root filesystem mounting function Test on NetBSD</a></li>
+                <p>In NetBSD's later stage of bootup, Kernel finds device with root filesystem. this search is assisted with the help of config file of kernel.
+                    NetBSD has Testing suite called ATF (Automated testing framework) But this suite does not cover this area of function. We attempt to write test
+                    for root device and filesystem selection. Functions we need to test are setroot , it utilizes number of other functions for different scenarios
+                    which are documented in my <a href="https://github.com/DiviyamPathak/Gsoc-2024-NetBSD/blob/main/setrootDocumentation.md">documentation</a> 
+                    . We will use vnd(8) for device simulation in userspace.</p>
+                <li>
+                </li>
+                
             </ul>
         </section>
         <section id="contact">

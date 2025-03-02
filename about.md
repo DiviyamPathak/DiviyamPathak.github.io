@@ -1,1 +1,0 @@
-## I am into systems programming, cloud and devops as well.

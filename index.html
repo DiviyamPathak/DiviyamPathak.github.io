@@ -1,52 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diviyam</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#projects"></a>Projects</li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I’m a passionate technologist with a multifaceted background. My interests span several key areas:
+    <head>
+        <meta charset="utf-8">
+            <meta content="width=device-width, initial-scale=1.0" name="viewport">
+                <title>
+                    Diviyam
+                </title>
+                <link href="index.css" rel="stylesheet">
+                </link>
+            </meta>
+        </meta>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#experience">
+                             Experience
+                        </a>
+                       
+                    </li>
+                     <li>
+                        <a href="#projects">
+                             Projects
+                        </a>
+                       
+                    </li>
+                    <li>
+                        <a href="#about">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="about">
+                <h2>
+                    About Me
+                </h2>
+                <p>
+                    I’m a passionate technologist with a multifaceted background. My interests span several key areas:
                  System programming ,Compilers ,Kernel devlopment ,Devops with Backend
                 I thrive on hard challenges, diving into the intricacies of hardware and software interaction. Whether 
                 it’s optimizing code, designing efficient algorithms
-                or squeezing out performance gains, I find joy in the nitty-gritty details. </p>
-        </section>
-        <section id="projects">
-            <h1>My Projects and Experiences</h1>
-            <ul>
-                <li><a href="https://diviyampathak.github.io/Gsoc-2024-NetBSD/">Root filesystem mounting function Test on NetBSD</a>
-                    <p>In NetBSD's later stage of bootup, Kernel finds device with root filesystem. this search is assisted with the help of config file of kernel.
+                or squeezing out performance gains, I find joy in the nitty-gritty details.
+                </p>
+            </section>
+            <section id="experience">
+                <h1>
+                    My Experiences
+                </h1>
+                <ul>
+                    <h2>
+                        Google Summer of Code Mentee
+                    </h2>
+                    <li>
+                        <a href="https://diviyampathak.github.io/Gsoc-2024-NetBSD/">
+                            Root filesystem mounting function Test on NetBSD
+                        </a>
+                        <p>
+                            In NetBSD's later stage of bootup, Kernel finds device with root filesystem. this search is assisted with the help of config file of kernel.
                     NetBSD has Testing suite called ATF (Automated testing framework) But this suite does not cover this area of function. We attempt to write test
                     for root device and filesystem selection. Functions we need to test are setroot , it utilizes number of other functions for different scenarios
-                    which are documented in my <a href="https://github.com/DiviyamPathak/Gsoc-2024-NetBSD/blob/main/setrootDocumentation.md">documentation</a> 
-                    . We will use vnd(8) for device simulation in userspace.
+                    which are documented in my
+                            <a href="https://github.com/DiviyamPathak/Gsoc-2024-NetBSD/blob/main/setrootDocumentation.md">
+                                documentation
+                            </a>
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section id="projects">
+                <h1>
+                    My Projects
+                </h1>
+                <ul>
+                    <h2>
+                        <a href="https://github.com/DiviyamPathak/file-repo-ai-agent?tab=readme-ov-file">
+                            Fire
+                        </a>
+                    </h2>
+                    <li>
+                        <a href="https://storage.googleapis.com/frontendrepo/index.html/">
+                            File repository with AI agent integration
+                        </a>
+                        <p>
+                            Configured Cloud Storage bucket permissions and corrected MIME types to resolve asset
+                            loading issues Implemented Cloud SQL with Flask backend for file storage and retrieval, ensuring secure access via IAM roles 
+                            and integrated artificial intelligence agent Chatbot.
+                            Optimized deployment with gsutil, Cloud Run, and Cloud SQL Proxy for seamless scalability and performance
+                            <a href="https://github.com/DiviyamPathak/file-repo-ai-agent?tab=readme-ov-file">
+                                Code Repository
+                            </a>
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <h2>
+                        <a href="https://github.com/DiviyamPathak/Jaag">
+                            Jaag
+                        </a>
+                    </h2>
+                    <li>
+                        <a href="https://github.com/DiviyamPathak/Jaag">
+                            Geographic Information System Project with GeoDjango,
+                        </a>
+                            <p>
+                        Developed a Django GIS web application using the GeoDjango framework to perform vector
+                        overlaying of maps, enabling the extraction of geographic anomaly data
+                        Designed template-based interface backed by PostgreSQL for efficient data management.
+                        Integrated PostGIS to store and process polygon data types, improving spatial query capabilities
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section id="contact">
+                <h2>
+                    Contact Me
+                </h2>
+                <p>
+                    Email: patdiviyam@gmail.com
+                </p>
+                <a href=" https://www.linkedin.com/in/diviyam-pathak-45874319b/">
+                    <p>
+                        LinkedIn:Diviyam
                     </p>
-                </li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Email: patdiviyam@gmail.com</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Diviyam</p>
-    </footer>
-</body>
+                </a>
+            </section>
+        </main>
+        <footer>
+            <p>
+                © 2024 Diviyam
+            </p>
+        </footer>
+    </body>
 </html>

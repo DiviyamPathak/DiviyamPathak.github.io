@@ -48,7 +48,14 @@ main section {
 main section h1,
 main section h2 {
     margin-bottom: 1rem;
-    color: #383737;
+    color: #000000;
+    font-weight: bold;
+}
+
+main section ul li  {
+    margin-bottom: 1rem;
+    color: #000000;
+    font-weight: bold;
 }
 
 main section p {

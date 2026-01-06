@@ -10,8 +10,8 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#experiences"></a>Experiences</li>
-                <li><a href="#projects"></a>Projects</li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -21,43 +21,84 @@
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>I’m a passionate technologist with a multifaceted background. My interests span several key areas:
-                 System programming , Compilers , Kernel devlopment , Devops with Backend
-                I thrive on low-level challenges, diving into the intricacies of hardware and software interaction. Whether 
-                it’s optimizing code, designing efficient algorithms, 
-                or squeezing out performance gains, I find joy in the nitty-gritty details. </p>
-                <a href="https://d2q19wqrjjfgl.cloudfront.net/">Here are my knowledge and learning Blogs</a>
+            <p>
+                I’m a passionate technologist with a strong interest in system programming, 
+                compilers, kernel development, DevOps, and backend engineering.
+                I enjoy working across abstraction layers—from low-level OS internals 
+                to distributed backend systems—focusing on performance, reliability, 
+                and scalability.
+            </p>
+            <p>
+                I thrive on solving low-level challenges, optimizing execution paths, 
+                designing efficient systems, and building production-ready infrastructure.
+            </p>
+            <a href="https://d2q19wqrjjfgl.cloudfront.net/">
+                Here are my knowledge and learning blogs
+            </a>
         </section>
-             <section id="#experience">
-            <h1>Experiences</h1>
-            <ul>
-                <li><a href="#projects"></a>Giant Eagle Bangalore Gradaute Trainee Software </li>
-                <p>Contributed to developing automation scripts across the merchandising infrastructure.
-                     Implemented key functionality required for the organization’s technology modernization initiatives. 
-                     Consistently delivered well-structured, on-time code across multiple project requirements.
-                    
-                </p>
 
-            </ul>
-            
-        </section>
-        <section id="projects">
-            <h1>My Projects</h1>
+        <section id="experience">
+            <h1>Experience</h1>
             <ul>
-                <li><a href="#projects"></a>Gsoc projects At NetBSD</li>
-                <p> During the boot process, after GRUB hands control over to the operating system, a temporary filesystem (initramfs) is mounted. 
-                    After system initialization completes, the permanent root filesystem is mounted.
-                    In NetBSD, this process is handled by the setroot function. I documented the root-device mounting process during NetBSD kernel boot and 
-                    implemented ATF tests and test cases for the setroot function in the NetBSD kernel. 
-                </p>
+                <li>
+                    <strong>Giant Eagle, Bangalore — Graduate Trainee Software Engineer</strong>
+                    <p>
+                        Contributed to automation and infrastructure tooling across the 
+                        merchandising platform. Implemented core functionality supporting 
+                        technology modernization initiatives and consistently delivered 
+                        well-structured, on-time code across multiple projects.
+                    </p>
+                </li>
             </ul>
-            
         </section>
+
+        <section id="projects">
+            <h1>Projects</h1>
+            <ul>
+                <li>
+                    <strong>Google Summer of Code — NetBSD Kernel Project</strong>
+                    <p>
+                        During the NetBSD boot process, after GRUB hands control to the kernel, 
+                        the system mounts a temporary filesystem (initramfs) before transitioning 
+                        to the permanent root filesystem.
+                        I documented the root-device mounting workflow in the NetBSD kernel, 
+                        analyzed the <code>setroot</code> logic, and implemented ATF test cases 
+                        to validate correct root filesystem selection during boot.
+                    </p>
+                </li>
+
+                <li>
+                    <strong>Multi-Tenant Distributed Task Processing Platform</strong>
+                    <p>
+                        Designed and built a multi-tenant asynchronous data processing platform 
+                        using Python, FastAPI, Celery, RabbitMQ, Redis, and PostgreSQL.
+                        The system ingests large-scale UPI / IMPS / NEFT transaction CSV files, 
+                        normalizes heterogeneous schemas, and persists transactional data with 
+                        idempotency and tenant isolation guarantees.
+                    </p>
+                    <p>
+                        Implemented distributed task execution with retries, failure recovery, 
+                        rate limiting, and fair scheduling across tenants. Built reconciliation 
+                        workflows to detect failed or mismatched transactions and generate 
+                        auditable records and analytical reports asynchronously.
+                    </p>
+                    <p>
+                        Containerized the platform using Docker and deployed it on Kubernetes 
+                        (kind), validating horizontal scaling, rolling updates, and observability 
+                        using structured logging and the Flower dashboard.
+                    </p>
+                    <a href="https://github.com/DiviyamPathak/distributed-task-queue">
+                        View on GitHub
+                    </a>
+                </li>
+            </ul>
+        </section>
+
         <section id="contact">
             <h2>Contact Me</h2>
-            <p>Email: patdiviyam@gmail.com</p>
+            <p>Email: <a href="mailto:patdiviyam@gmail.com">patdiviyam@gmail.com</a></p>
             <p><a href="https://www.linkedin.com/in/diviyam-pathak-45874319b/">LinkedIn: Diviyam Pathak</a></p>
-            <p><a href="https://github.com/DiviyamPathak">Github: DiviyamPathak</a></p>
+            <p><a href="https://github.com/DiviyamPathak">GitHub: DiviyamPathak</a></p>
         </section>
     </main>
 

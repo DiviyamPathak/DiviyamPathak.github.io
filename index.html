@@ -2,112 +2,317 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+        name="description"
+        content="Diviyam Pathak is a software engineer interested in systems, cloud, backend engineering, and thoughtful developer tooling."
+    />
     <title>Diviyam Pathak</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&amp;display=swap"
+        rel="stylesheet"
+    />
+    <script>
+        (() => {
+            try {
+                const savedTheme = localStorage.getItem("theme");
+                const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+                if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
+                    document.documentElement.dataset.theme = "dark";
+                }
+            } catch (error) {}
+        })();
+    </script>
     <link rel="stylesheet" href="index.css" />
 </head>
 <body>
+<div class="page-shell">
+    <header class="site-header">
+        <nav class="nav">
+            <a class="brand" href="#top">Diviyam Pathak</a>
+            <div class="nav-actions">
+                <ul class="nav-links">
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">
+                    <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+                    <span class="theme-toggle-label">Dark mode</span>
+                </button>
+            </div>
+        </nav>
+    </header>
 
-<header class="site-header">
-    <nav class="nav">
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <main id="top">
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Home</p>
+                <h1>Diviyam Pathak</h1>
+                <p class="hero-summary">
+                    Software engineer interested in systems, backend engineering, cloud, automation, and thoughtful software that works well in practice.
+                </p>
 
-        <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
-    </nav>
-</header>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="mailto:patdiviyam@gmail.com">Mail</a>
+                    <a class="button button-secondary" href="#contact">Contact</a>
+                </div>
 
-<main>
+                <ul class="contact-strip" aria-label="Home links">
+                    <li><a href="https://diviyampathak.github.io">Website</a></li>
+                    <li><a href="https://github.com/DiviyamPathak">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/diviyam-pathak-45874319b/">LinkedIn</a></li>
+                    <li><a href="https://d2q19wqrjjfgl.cloudfront.net/">Blog</a></li>
+                </ul>
+            </div>
+        </section>
 
-<section id="about" class="section">
-    <h2>About Me</h2>
+        <section class="content-grid">
+            <div class="main-column">
+                <section id="summary" class="section-card">
+                    <div class="section-heading">
+                        <p class="section-kicker">About</p>
+                    </div>
+                    <p>
+                        I am a software engineer with experience across Kubernetes, automation, backend systems, and low-level operating system work.
+                        Over time I have been drawn to projects that combine careful debugging, good abstractions, and real-world reliability,
+                        whether that means improving team workflows, shipping internal tools, or understanding what happens beneath the surface.
+                    </p>
+                </section>
 
-    <p>
-        I am a systems-focused software engineer with strong interests in
-        kernel development, compilers, backend systems, and DevOps.
-        I work across abstraction layers—from OS internals to distributed
-        platforms—prioritizing correctness, performance, and reliability.
-    </p>
+                <section id="experience" class="section-card">
+                    <div class="section-heading">
+                        <p class="section-kicker">Experience</p>
+                        <h2>Recent work</h2>
+                    </div>
 
-    <p>
-        My work emphasizes deep technical understanding, careful design,
-        and production-grade engineering practices.
-    </p>
+                    <div class="timeline">
+                        <article class="timeline-item">
+                            <div class="timeline-meta">
+                                <p class="role-date">Jan 2026 - Present</p>
+                                <p class="role-location">Giant Eagle GCC, Bangalore</p>
+                            </div>
+                            <div class="timeline-body">
+                                <h3>Associate Software Engineer</h3>
+                                <ul>
+                                    <li>Standardized deployment patterns using Helm and GitOps workflows, reducing release failures.</li>
+                                    <li>Developed ingress, service mesh, secrets management, and observability services used by 100+ engineering teams.</li>
+                                    <li>Integrated hybrid-cloud networking between on-prem Kubernetes clusters and public cloud environments, enabling seamless workload portability.</li>
+                                    <li>Supported Black Friday and Cyber Week readiness exercises, ensuring platform scalability for traffic spikes exceeding 4x baseline demand.</li>
+                                </ul>
+                            </div>
+                        </article>
 
-    <a href="https://d2q19wqrjjfgl.cloudfront.net/">
-        Technical notes and learning blogs
-    </a>
-</section>
+                        <article class="timeline-item">
+                            <div class="timeline-meta">
+                                <p class="role-date">May 2025 - Jan 2026</p>
+                                <p class="role-location">Giant Eagle GCC, Bangalore</p>
+                            </div>
+                            <div class="timeline-body">
+                                <h3>Graduate Software Trainee</h3>
+                                <ul>
+                                    <li>Authored operational runbooks and automation scripts that reduced average incident resolution time by 25%.</li>
+                                    <li>Developed Terraform modules and deployment templates for Kubernetes-based services, reducing infrastructure provisioning time by 3 hours.</li>
+                                    <li>Implemented monitoring dashboards using Prometheus and Grafana covering 40+ microservices, reducing incident triage time by 35%.</li>
+                                </ul>
+                            </div>
+                        </article>
 
-<section id="experience" class="section">
-    <h2>Experience</h2>
+                        <article class="timeline-item">
+                            <div class="timeline-meta">
+                                <p class="role-date">Apr 2024 - Nov 2024</p>
+                                <p class="role-location">The NetBSD Foundation, Remote</p>
+                            </div>
+                            <div class="timeline-body">
+                                <h3>Google Summer of Code Contributor</h3>
+                                <ul>
+                                    <li>Debugged C code in NetBSD kernel space to improve system reliability and low-level functionality.</li>
+                                    <li>Built automated test environments using Bash scripting and virtualization for repeatable systems validation.</li>
+                                    <li>Developed ATF-based test cases to strengthen operating system test coverage and regression detection.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </section>
 
-    <article>
-        <strong>Giant Eagle, Bangalore — Graduate Trainee Software Engineer</strong>
-        <p>
-            Worked on automation and infrastructure tooling for the
-            merchandising platform. Contributed to modernization initiatives
-            and delivered production-quality code across multiple projects.
-        </p>
-    </article>
-</section>
+                <section id="projects" class="section-card">
+                    <div class="section-heading">
+                        <p class="section-kicker">Projects</p>
+                        <h2>Selected builds</h2>
+                    </div>
 
-<section id="projects" class="section">
-    <h2>Projects</h2>
+                    <div class="projects-grid">
+                        <article class="project-card">
+                            <div class="project-header">
+                                <h3>LLM-Driven Incident Triage Agent</h3>
+                                <p>FastMCP, ServiceNow, Python, Prometheus</p>
+                            </div>
+                            <ul>
+                                <li>Built an MCP-compliant, email-triggered incident triage agent exposing ServiceNow incident history and CMDB resources to LLM tools.</li>
+                                <li>Automated assignment-group recommendation and priority classification via LLMs with least-privilege ServiceNow API access.</li>
+                                <li>Evaluated the system on historical incidents, achieving 35% faster triage and 85% assignment accuracy with end-to-end latency under 2 seconds.</li>
+                            </ul>
+                        </article>
 
-    <article>
-        <strong>Google Summer of Code — NetBSD Kernel</strong>
-        <p>
-            Documented and analyzed the NetBSD root-device mounting workflow
-            during early boot. Studied <code>setroot</code> logic and implemented
-            ATF test cases to validate correct root filesystem selection.
-        </p>
-    </article>
+                        <article class="project-card">
+                            <div class="project-header">
+                                <h3>Distributed Task Processing Platform</h3>
+                                <p>FastAPI, Celery, RabbitMQ, Redis, PostgreSQL, Kubernetes</p>
+                            </div>
+                            <ul>
+                                <li>Developed multi-tenant ingestion pipelines for UPI, IMPS, and NEFT transaction processing with schema normalization.</li>
+                                <li>Designed scalable distributed task queues with rate limiting, autoscaling workers, and asynchronous reconciliation workflows.</li>
+                                <li>Deployed on Docker and Kubernetes, sustaining 200k+ rows per minute with CI pipelines implemented via GitHub Actions.</li>
+                            </ul>
+                            <a class="project-link" href="https://github.com/DiviyamPathak/distributed-task-queue">View repository</a>
+                        </article>
 
-    <article>
-        <strong>Multi-Tenant Distributed Task Processing Platform</strong>
-        <p>
-            Designed and implemented a multi-tenant asynchronous processing
-            platform using FastAPI, Celery, RabbitMQ, Redis, and PostgreSQL.
-            The system ingests large-scale financial transaction CSVs and
-            enforces idempotency and tenant isolation.
-        </p>
-        <p>
-            Implemented retries, failure recovery, reconciliation workflows,
-            and deployed the platform on Kubernetes with horizontal scaling
-            and observability.
-        </p>
-        <a href="https://github.com/DiviyamPathak/distributed-task-queue">
-            View on GitHub
-        </a>
-    </article>
-</section>
+                        <article class="project-card">
+                            <div class="project-header">
+                                <h3>Network Latency Tracker</h3>
+                                <p>AWS Lambda, API Gateway, DynamoDB, CloudWatch, Terraform</p>
+                            </div>
+                            <ul>
+                                <li>Built a serverless monitoring system for scheduled endpoint latency and availability checks every 5 minutes.</li>
+                                <li>Designed reusable Terraform modules for Lambda, DynamoDB, API Gateway, and scheduler components across dev and prod environments.</li>
+                                <li>Applied least-privilege IAM and on-demand billing for a secure, cost-aware reliability workflow with historical uptime reporting.</li>
+                            </ul>
+                        </article>
 
-<section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:patdiviyam@gmail.com">patdiviyam@gmail.com</a></p>
-    <p><a href="https://www.linkedin.com/in/diviyam-pathak-45874319b/">LinkedIn</a></p>
-    <p><a href="https://github.com/DiviyamPathak">GitHub</a></p>
-</section>
+                        <article class="project-card">
+                            <div class="project-header">
+                                <h3>Linux Systems Analysis and Dynamic Instrumentation</h3>
+                                <p>DynamoRIO, perf, strace, vmstat, iostat, Valgrind</p>
+                            </div>
+                            <ul>
+                                <li>Analyzed Linux systems using instruction tracing, syscall analysis, and performance tooling to surface CPU hotspots and scheduling overhead.</li>
+                                <li>Traced kernel-user space interactions to identify blocking syscalls, heavy I/O paths, memory pressure, and queue-depth saturation.</li>
+                                <li>Evaluated memory correctness and allocation efficiency to detect leaks, invalid accesses, and heap utilization issues.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+            </div>
 
-</main>
+            <aside class="side-column">
+                <section id="skills" class="section-card compact-card">
+                    <div class="section-heading">
+                        <p class="section-kicker">Technical Skills</p>
+                        <h2>Toolbox</h2>
+                    </div>
 
-<footer class="site-footer">
-    <p>&copy; 2024 Diviyam Pathak</p>
-</footer>
+                    <div class="skill-groups">
+                        <div class="skill-group">
+                            <h3>Platforms</h3>
+                            <p>AWS, Azure, OpenStack, Docker, Kubernetes, Linux, NetBSD, QEMU</p>
+                        </div>
+                        <div class="skill-group">
+                            <h3>Infrastructure</h3>
+                            <p>Terraform, Ansible, GitHub Actions, Jenkins, Helm, GitOps, service mesh, secrets management</p>
+                        </div>
+                        <div class="skill-group">
+                            <h3>Programming</h3>
+                            <p>Python, Go, Bash, SQL, C, C++, C#, FastAPI, Django, ASP.NET Core</p>
+                        </div>
+                        <div class="skill-group">
+                            <h3>Data &amp; Messaging</h3>
+                            <p>MySQL, PostgreSQL, DynamoDB, Redis, NoSQL, RabbitMQ</p>
+                        </div>
+                        <div class="skill-group">
+                            <h3>Systems &amp; Observability</h3>
+                            <p>Prometheus, Grafana, CloudWatch, perf, strace, tcpdump, Valgrind, kernel debugging, LLVM</p>
+                        </div>
+                        <div class="skill-group">
+                            <h3>Networking</h3>
+                            <p>TCP/IP, OSPF, BGP, VXLAN, hybrid-cloud networking</p>
+                        </div>
+                    </div>
+                </section>
 
+                <section class="section-card compact-card">
+                    <div class="section-heading">
+                        <p class="section-kicker">Education</p>
+                        <h2>Academic background</h2>
+                    </div>
+
+                    <article class="mini-card">
+                        <h3>MS Ramaiah University of Applied Sciences</h3>
+                        <p>B.E. Mathematics &amp; Computing</p>
+                        <p>2021 - 2025</p>
+                    </article>
+                </section>
+
+                <section class="section-card compact-card">
+                    <div class="section-heading">
+                        <p class="section-kicker">Certifications</p>
+                        <h2>Professional learning</h2>
+                    </div>
+
+                    <ul class="plain-list">
+                        <li>Linux Foundation: Introduction to Kubernetes</li>
+                        <li>Linux Foundation: Introduction to Jenkins</li>
+                    </ul>
+                </section>
+
+                <section id="contact" class="section-card compact-card">
+                    <div class="section-heading">
+                        <p class="section-kicker">Contact</p>
+                        <h2>Open to platform and systems work</h2>
+                    </div>
+
+                    <p>
+                        For platform engineering, infrastructure, SRE, or systems-focused roles, reach out through email or connect on GitHub and LinkedIn.
+                    </p>
+
+                    <ul class="plain-list">
+                        <li><a href="mailto:patdiviyam@gmail.com">patdiviyam@gmail.com</a></li>
+                        <li><a href="https://github.com/DiviyamPathak">github.com/DiviyamPathak</a></li>
+                        <li><a href="https://www.linkedin.com/in/diviyam-pathak-45874319b/">linkedin.com/in/diviyam-pathak-45874319b</a></li>
+                    </ul>
+                </section>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Diviyam Pathak</p>
+    </footer>
+</div>
 <script>
-    const toggle = document.getElementById("theme-toggle");
-    toggle.addEventListener("click", () => {
-        document.body.classList.toggle("dark");
-        toggle.textContent =
-            document.body.classList.contains("dark") ? "☀️" : "🌙";
-    });
-</script>
+    (() => {
+        const root = document.documentElement;
+        const toggle = document.getElementById("theme-toggle");
+        const label = toggle.querySelector(".theme-toggle-label");
+        const storageKey = "theme";
 
+        const applyTheme = (theme) => {
+            const isDark = theme === "dark";
+            if (isDark) {
+                root.dataset.theme = "dark";
+            } else {
+                delete root.dataset.theme;
+            }
+
+            toggle.setAttribute("aria-pressed", String(isDark));
+            toggle.setAttribute("aria-label", isDark ? "Switch to light theme" : "Switch to dark theme");
+            label.textContent = isDark ? "Light mode" : "Dark mode";
+        };
+
+        const initialTheme = root.dataset.theme === "dark" ? "dark" : "light";
+        applyTheme(initialTheme);
+
+        toggle.addEventListener("click", () => {
+            const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
+            applyTheme(nextTheme);
+
+            try {
+                localStorage.setItem(storageKey, nextTheme);
+            } catch (error) {}
+        });
+    })();
+</script>
 </body>
 </html>

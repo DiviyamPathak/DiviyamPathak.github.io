@@ -143,8 +143,21 @@
                         <p class="section-kicker">Projects</p>
                         <h2>Selected builds</h2>
                     </div>
-
+                    
                     <div class="projects-grid">
+                        <article class="project-card">
+                            <div class="project-header">
+                                <h3>PCO/OS - Python-First x86_64 Operating System</h3>
+                                <p>Codon, Python, C, NASM, LLVM, UEFI, QEMU, OVMF</p>
+                            </div>
+                            <ul>
+                                <li>Engineered a custom x86_64 operating system with a complete UEFI boot pipeline, custom EFI loader, BootInfo handoff interface, and firmware-independent kernel initialization.</li>
+                                <li>Implemented Physical Memory Management (PMM), Virtual Memory Management (VMM), paging, page tables, interrupt handling (GDT, IDT, TSS), APIC/LAPIC timers, exception handling, and kernel-owned address spaces.</li>
+                                <li>Built preemptive multitasking, context switching, ring-3 user-space execution, POSIX-inspired system calls, ELF64 loading, a Virtual File System (VFS), initramfs/tmpfs storage, and an interactive shell environment.</li>
+                            </ul>
+                            <a class="project-link" href="https://github.com/DiviyamPathak/pco_os">View repository</a>
+                        </article>
+
                         <article class="project-card">
                             <div class="project-header">
                                 <h3>LLM-Driven Incident Triage Agent</h3>
@@ -180,6 +193,8 @@
                                 <li>Designed reusable Terraform modules for Lambda, DynamoDB, API Gateway, and scheduler components across dev and prod environments.</li>
                                 <li>Applied least-privilege IAM and on-demand billing for a secure, cost-aware reliability workflow with historical uptime reporting.</li>
                             </ul>
+                            <a class="project-link" href="https://github.com/DiviyamPathak/network-conn-tracker">View repository</a>
+
                         </article>
 
                         <article class="project-card">
